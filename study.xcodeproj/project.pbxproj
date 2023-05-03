@@ -14,6 +14,12 @@
 		69067B2029EC188400F10BE4 /* studyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69067B1F29EC188400F10BE4 /* studyTests.swift */; };
 		69067B2A29EC188400F10BE4 /* studyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69067B2929EC188400F10BE4 /* studyUITests.swift */; };
 		69067B2C29EC188400F10BE4 /* studyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69067B2B29EC188400F10BE4 /* studyUITestsLaunchTests.swift */; };
+		693F2A592A02ACF700B9DA4D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A582A02ACF700B9DA4D /* CustomButton.swift */; };
+		693F2A5B2A02B19800B9DA4D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A5A2A02B19800B9DA4D /* CustomTextField.swift */; };
+		693F2A5D2A02B28C00B9DA4D /* LeftText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A5C2A02B28C00B9DA4D /* LeftText.swift */; };
+		693F2A612A02B59C00B9DA4D /* JoinTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A602A02B59C00B9DA4D /* JoinTerm.swift */; };
+		693F2A632A02B78D00B9DA4D /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A622A02B78D00B9DA4D /* CheckBox.swift */; };
+		693F2A652A02B90600B9DA4D /* icn_checkbox_off.svg in Resources */ = {isa = PBXBuildFile; fileRef = 693F2A642A02B90500B9DA4D /* icn_checkbox_off.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		69067B2529EC188400F10BE4 /* studyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69067B2929EC188400F10BE4 /* studyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyUITests.swift; sourceTree = "<group>"; };
 		69067B2B29EC188400F10BE4 /* studyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		693F2A582A02ACF700B9DA4D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		693F2A5A2A02B19800B9DA4D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		693F2A5C2A02B28C00B9DA4D /* LeftText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftText.swift; sourceTree = "<group>"; };
+		693F2A602A02B59C00B9DA4D /* JoinTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTerm.swift; sourceTree = "<group>"; };
+		693F2A622A02B78D00B9DA4D /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		693F2A642A02B90500B9DA4D /* icn_checkbox_off.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = icn_checkbox_off.svg; path = ../../../../../Downloads/join_terms_001/icon/checkbox/icn_checkbox_off.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +106,13 @@
 		69067B0D29EC188300F10BE4 /* study */ = {
 			isa = PBXGroup;
 			children = (
+				693F2A562A029CB000B9DA4D /* ViewModel */,
+				693F2A552A029CA300B9DA4D /* View */,
+				693F2A542A01609200B9DA4D /* Model */,
 				69067B0E29EC188300F10BE4 /* studyApp.swift */,
 				69067B1029EC188300F10BE4 /* ContentView.swift */,
 				69067B1229EC188400F10BE4 /* Assets.xcassets */,
+				693F2A642A02B90500B9DA4D /* icn_checkbox_off.svg */,
 				69067B1429EC188400F10BE4 /* Preview Content */,
 			);
 			path = study;
@@ -125,6 +141,40 @@
 				69067B2B29EC188400F10BE4 /* studyUITestsLaunchTests.swift */,
 			);
 			path = studyUITests;
+			sourceTree = "<group>";
+		};
+		693F2A542A01609200B9DA4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		693F2A552A029CA300B9DA4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				693F2A572A02ACD500B9DA4D /* SubView */,
+				693F2A602A02B59C00B9DA4D /* JoinTerm.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		693F2A562A029CB000B9DA4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		693F2A572A02ACD500B9DA4D /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				693F2A582A02ACF700B9DA4D /* CustomButton.swift */,
+				693F2A5A2A02B19800B9DA4D /* CustomTextField.swift */,
+				693F2A5C2A02B28C00B9DA4D /* LeftText.swift */,
+				693F2A622A02B78D00B9DA4D /* CheckBox.swift */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69067B1629EC188400F10BE4 /* Preview Assets.xcassets in Resources */,
+				693F2A652A02B90600B9DA4D /* icn_checkbox_off.svg in Resources */,
 				69067B1329EC188400F10BE4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693F2A5D2A02B28C00B9DA4D /* LeftText.swift in Sources */,
+				693F2A5B2A02B19800B9DA4D /* CustomTextField.swift in Sources */,
 				69067B1129EC188300F10BE4 /* ContentView.swift in Sources */,
+				693F2A632A02B78D00B9DA4D /* CheckBox.swift in Sources */,
+				693F2A612A02B59C00B9DA4D /* JoinTerm.swift in Sources */,
 				69067B0F29EC188300F10BE4 /* studyApp.swift in Sources */,
+				693F2A592A02ACF700B9DA4D /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
