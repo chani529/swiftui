@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		69067B0F29EC188300F10BE4 /* studyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69067B0E29EC188300F10BE4 /* studyApp.swift */; };
-		69067B1129EC188300F10BE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69067B1029EC188300F10BE4 /* ContentView.swift */; };
+		69067B1129EC188300F10BE4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69067B1029EC188300F10BE4 /* LoginView.swift */; };
 		69067B1329EC188400F10BE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69067B1229EC188400F10BE4 /* Assets.xcassets */; };
 		69067B1629EC188400F10BE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69067B1529EC188400F10BE4 /* Preview Assets.xcassets */; };
 		69067B2029EC188400F10BE4 /* studyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69067B1F29EC188400F10BE4 /* studyTests.swift */; };
 		69067B2A29EC188400F10BE4 /* studyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69067B2929EC188400F10BE4 /* studyUITests.swift */; };
 		69067B2C29EC188400F10BE4 /* studyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69067B2B29EC188400F10BE4 /* studyUITestsLaunchTests.swift */; };
+		69231AED2A05516900BB92D8 /* SecurityTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69231AEC2A05516900BB92D8 /* SecurityTextField.swift */; };
+		69231AEF2A064A6300BB92D8 /* JoinNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69231AEE2A064A6300BB92D8 /* JoinNameView.swift */; };
 		693F2A592A02ACF700B9DA4D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A582A02ACF700B9DA4D /* CustomButton.swift */; };
 		693F2A5B2A02B19800B9DA4D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A5A2A02B19800B9DA4D /* CustomTextField.swift */; };
 		693F2A5D2A02B28C00B9DA4D /* LeftText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A5C2A02B28C00B9DA4D /* LeftText.swift */; };
-		693F2A612A02B59C00B9DA4D /* JoinTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A602A02B59C00B9DA4D /* JoinTerm.swift */; };
+		693F2A612A02B59C00B9DA4D /* JoinTermView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A602A02B59C00B9DA4D /* JoinTermView.swift */; };
 		693F2A632A02B78D00B9DA4D /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A622A02B78D00B9DA4D /* CheckBox.swift */; };
 		693F2A652A02B90600B9DA4D /* icn_checkbox_off.svg in Resources */ = {isa = PBXBuildFile; fileRef = 693F2A642A02B90500B9DA4D /* icn_checkbox_off.svg */; };
+		693F2A672A05116200B9DA4D /* JoinSnsPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A662A05116200B9DA4D /* JoinSnsPhoneView.swift */; };
+		693F2A692A052B3300B9DA4D /* PageTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A682A052B3300B9DA4D /* PageTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,7 @@
 /* Begin PBXFileReference section */
 		69067B0B29EC188300F10BE4 /* study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69067B0E29EC188300F10BE4 /* studyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyApp.swift; sourceTree = "<group>"; };
-		69067B1029EC188300F10BE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		69067B1029EC188300F10BE4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		69067B1229EC188400F10BE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69067B1529EC188400F10BE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		69067B1B29EC188400F10BE4 /* studyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,12 +54,16 @@
 		69067B2529EC188400F10BE4 /* studyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69067B2929EC188400F10BE4 /* studyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyUITests.swift; sourceTree = "<group>"; };
 		69067B2B29EC188400F10BE4 /* studyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69231AEC2A05516900BB92D8 /* SecurityTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTextField.swift; sourceTree = "<group>"; };
+		69231AEE2A064A6300BB92D8 /* JoinNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNameView.swift; sourceTree = "<group>"; };
 		693F2A582A02ACF700B9DA4D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		693F2A5A2A02B19800B9DA4D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		693F2A5C2A02B28C00B9DA4D /* LeftText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftText.swift; sourceTree = "<group>"; };
-		693F2A602A02B59C00B9DA4D /* JoinTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTerm.swift; sourceTree = "<group>"; };
+		693F2A602A02B59C00B9DA4D /* JoinTermView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTermView.swift; sourceTree = "<group>"; };
 		693F2A622A02B78D00B9DA4D /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		693F2A642A02B90500B9DA4D /* icn_checkbox_off.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = icn_checkbox_off.svg; path = ../../../../../Downloads/join_terms_001/icon/checkbox/icn_checkbox_off.svg; sourceTree = "<group>"; };
+		693F2A662A05116200B9DA4D /* JoinSnsPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSnsPhoneView.swift; sourceTree = "<group>"; };
+		693F2A682A052B3300B9DA4D /* PageTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +118,6 @@
 				693F2A552A029CA300B9DA4D /* View */,
 				693F2A542A01609200B9DA4D /* Model */,
 				69067B0E29EC188300F10BE4 /* studyApp.swift */,
-				69067B1029EC188300F10BE4 /* ContentView.swift */,
 				69067B1229EC188400F10BE4 /* Assets.xcassets */,
 				693F2A642A02B90500B9DA4D /* icn_checkbox_off.svg */,
 				69067B1429EC188400F10BE4 /* Preview Content */,
@@ -153,8 +160,9 @@
 		693F2A552A029CA300B9DA4D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				693F2A572A02ACD500B9DA4D /* SubView */,
-				693F2A602A02B59C00B9DA4D /* JoinTerm.swift */,
+				69067B1029EC188300F10BE4 /* LoginView.swift */,
+				693F2A6A2A053DEC00B9DA4D /* SignUp */,
+				693F2A572A02ACD500B9DA4D /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,15 +174,27 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		693F2A572A02ACD500B9DA4D /* SubView */ = {
+		693F2A572A02ACD500B9DA4D /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				693F2A582A02ACF700B9DA4D /* CustomButton.swift */,
 				693F2A5A2A02B19800B9DA4D /* CustomTextField.swift */,
 				693F2A5C2A02B28C00B9DA4D /* LeftText.swift */,
 				693F2A622A02B78D00B9DA4D /* CheckBox.swift */,
+				693F2A682A052B3300B9DA4D /* PageTitle.swift */,
+				69231AEC2A05516900BB92D8 /* SecurityTextField.swift */,
 			);
-			path = SubView;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		693F2A6A2A053DEC00B9DA4D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				693F2A602A02B59C00B9DA4D /* JoinTermView.swift */,
+				69231AEE2A064A6300BB92D8 /* JoinNameView.swift */,
+				693F2A662A05116200B9DA4D /* JoinSnsPhoneView.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,10 +330,14 @@
 			files = (
 				693F2A5D2A02B28C00B9DA4D /* LeftText.swift in Sources */,
 				693F2A5B2A02B19800B9DA4D /* CustomTextField.swift in Sources */,
-				69067B1129EC188300F10BE4 /* ContentView.swift in Sources */,
+				693F2A672A05116200B9DA4D /* JoinSnsPhoneView.swift in Sources */,
+				69231AED2A05516900BB92D8 /* SecurityTextField.swift in Sources */,
+				69067B1129EC188300F10BE4 /* LoginView.swift in Sources */,
 				693F2A632A02B78D00B9DA4D /* CheckBox.swift in Sources */,
-				693F2A612A02B59C00B9DA4D /* JoinTerm.swift in Sources */,
+				69231AEF2A064A6300BB92D8 /* JoinNameView.swift in Sources */,
+				693F2A612A02B59C00B9DA4D /* JoinTermView.swift in Sources */,
 				69067B0F29EC188300F10BE4 /* studyApp.swift in Sources */,
+				693F2A692A052B3300B9DA4D /* PageTitle.swift in Sources */,
 				693F2A592A02ACF700B9DA4D /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

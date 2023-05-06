@@ -7,15 +7,13 @@
 
 import SwiftUI
 
-struct JoinTerm: View {
+struct JoinTermView: View {
     @State var isChecked: Bool = false
+    @State private var selection: Int? = nil
     var body: some View {
        
         VStack (alignment: .leading){
-            Text("약관 동의")
-                .bold()
-                .font(.system(size: 30))
-                .padding(.bottom, 30)
+            PageTitle(title:"약관 동의")
             VStack {
                 Checkbox(title: "전체 약관에 동의합니다.", isChecked: $isChecked, isExistAction: false)
                 Divider()
@@ -24,20 +22,32 @@ struct JoinTerm: View {
                 Checkbox(title: "위치정보 서비스 이용약관 (필수)", isChecked: $isChecked){}
                 Checkbox(title: "마케팅 수집 동의 (선택)", isChecked: $isChecked){}
             }.padding(.bottom, 120)
-                
+            Spacer()
+            NavigationLink(
+                destination: JoinNameView(),
+                tag: 2,
+                selection: $selection,
+                label: { EmptyView() }
+            )
+            CustomButton(title: "동의하고 가입하기", backgroundColor: .black, foregroundColor: .white) {self.selection = 2}
           
-            
-            CustomButton(title: "동의하고 가입하기", backgroundColor: .black, foregroundColor: .white) {
-                // 버튼이 눌렸을 때 실행될 코드
-            }
+            Spacer()
         }
         .padding()
+        
+        .navigationBarItems(trailing:
+            Button(action: {
+                print("Edipt button tapped")
+            }) {
+                Image(systemName: "xmark")
+            }
+        )
     }
       
 }
 
-struct JoinTerm_Previews: PreviewProvider {
+struct JoinTermView_Previews: PreviewProvider {
     static var previews: some View {
-        JoinTerm()
+        JoinTermView()
     }
 }

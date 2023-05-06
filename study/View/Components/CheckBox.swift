@@ -48,3 +48,9 @@ struct CheckboxToggleStyle: ToggleStyle {
         }
     }
 }
+
+struct Checkbox_Previews: PreviewProvider {
+    static var previews: some View {
+        Checkbox(title: "전체 약관에 동의합니다.", isChecked: .constant(false))
+    }
+}

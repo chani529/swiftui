@@ -21,3 +21,9 @@ struct LeftText: View {
             .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
+
+struct LeftText_Previews: PreviewProvider {
+    static var previews: some View {
+        LeftText("아이디(이메일)")
+    }
+}

@@ -7,11 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginView: View {
     @State private var id = ""
+    @State var isVaildId: Bool = true
     @State private var pass = ""
+    @State var isVaildPassId: Bool = false
+    @State private var selection: Int? = nil
     
     var body: some View {
+        
         NavigationView{
             VStack {
                 VStack(spacing: 10)  {
@@ -19,9 +23,9 @@ struct ContentView: View {
                     Text("Energy in your hand")
                         .padding(.bottom, 30)
                     LeftText("아이디(이메일)")
-                    CustomTextField(placeholder: "이메일을 입력해주세요.", text: $id)
+                    CustomTextField(placeholder: "이메일을 입력해주세요.", text: $id, isValid: $isVaildId, notValidText: .constant("아이디(이메일)는 이메일 형식으로 입력해주세요."))
                     LeftText("비밀번호")
-                    CustomTextField(placeholder: "비밀번호를 입력해주세요.", text: $pass)
+                    SecurityTextField(placeholder: "비밀번호를 입력해주세요.", text: $pass)
                 }.padding(.bottom, 60)
                 
                 VStack {
@@ -39,24 +43,30 @@ struct ContentView: View {
                     }
                 }
                 HStack {
+                    Spacer()
+                    NavigationLink(
+                        destination: JoinNameView(),
+                        tag: 1,
+                        selection: $selection,
+                        label: { Text("회원 가입").foregroundColor(.black)}
+                    )
                     
-                    
-                    NavigationLink(destination: JoinTerm()) {
+                    NavigationLink(destination: JoinTermView()) {
                         Text("회원 가입").foregroundColor(.black)
                     }
                     
                     Spacer()
                     Text("계정 찾기 - 비밀번호")
-                } 
+                }
             }
         }
         .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginView()
     }
 }
 
