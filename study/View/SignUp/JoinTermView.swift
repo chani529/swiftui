@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct JoinTermView: View {
+    @EnvironmentObject var router: Router
     @State var isChecked: Bool = false
     @State private var selection: Int? = nil
+    @State private var isLinkActive: Bool = false
     var body: some View {
        
         VStack (alignment: .leading){
@@ -23,18 +25,14 @@ struct JoinTermView: View {
                 Checkbox(title: "마케팅 수집 동의 (선택)", isChecked: $isChecked){}
             }.padding(.bottom, 120)
             Spacer()
-            NavigationLink(
-                destination: JoinNameView(),
-                tag: 2,
-                selection: $selection,
-                label: { EmptyView() }
-            )
-            CustomButton(title: "동의하고 가입하기", backgroundColor: .black, foregroundColor: .white) {self.selection = 2}
+          
+            CustomButton(title: "동의하고 가입하기", backgroundColor: .black, foregroundColor: .white) {
+                router.gotoView(views: Views.JoinNameView)
+            }
           
             Spacer()
         }
         .padding()
-        
         .navigationBarItems(trailing:
             Button(action: {
                 print("Edipt button tapped")

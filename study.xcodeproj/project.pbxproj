@@ -16,6 +16,8 @@
 		69067B2C29EC188400F10BE4 /* studyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69067B2B29EC188400F10BE4 /* studyUITestsLaunchTests.swift */; };
 		69231AED2A05516900BB92D8 /* SecurityTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69231AEC2A05516900BB92D8 /* SecurityTextField.swift */; };
 		69231AEF2A064A6300BB92D8 /* JoinNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69231AEE2A064A6300BB92D8 /* JoinNameView.swift */; };
+		69231AF22A06A6C400BB92D8 /* JoinIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69231AF12A06A6C400BB92D8 /* JoinIdView.swift */; };
+		69231AF42A06A8C600BB92D8 /* JoinPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69231AF32A06A8C600BB92D8 /* JoinPassView.swift */; };
 		693F2A592A02ACF700B9DA4D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A582A02ACF700B9DA4D /* CustomButton.swift */; };
 		693F2A5B2A02B19800B9DA4D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A5A2A02B19800B9DA4D /* CustomTextField.swift */; };
 		693F2A5D2A02B28C00B9DA4D /* LeftText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A5C2A02B28C00B9DA4D /* LeftText.swift */; };
@@ -24,6 +26,7 @@
 		693F2A652A02B90600B9DA4D /* icn_checkbox_off.svg in Resources */ = {isa = PBXBuildFile; fileRef = 693F2A642A02B90500B9DA4D /* icn_checkbox_off.svg */; };
 		693F2A672A05116200B9DA4D /* JoinSnsPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A662A05116200B9DA4D /* JoinSnsPhoneView.swift */; };
 		693F2A692A052B3300B9DA4D /* PageTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A682A052B3300B9DA4D /* PageTitle.swift */; };
+		695B02312A07DB4A00F851A2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B02302A07DB4A00F851A2 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,8 @@
 		69067B2B29EC188400F10BE4 /* studyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		69231AEC2A05516900BB92D8 /* SecurityTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTextField.swift; sourceTree = "<group>"; };
 		69231AEE2A064A6300BB92D8 /* JoinNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNameView.swift; sourceTree = "<group>"; };
+		69231AF12A06A6C400BB92D8 /* JoinIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinIdView.swift; sourceTree = "<group>"; };
+		69231AF32A06A8C600BB92D8 /* JoinPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinPassView.swift; sourceTree = "<group>"; };
 		693F2A582A02ACF700B9DA4D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		693F2A5A2A02B19800B9DA4D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		693F2A5C2A02B28C00B9DA4D /* LeftText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftText.swift; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		693F2A642A02B90500B9DA4D /* icn_checkbox_off.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = icn_checkbox_off.svg; path = ../../../../../Downloads/join_terms_001/icon/checkbox/icn_checkbox_off.svg; sourceTree = "<group>"; };
 		693F2A662A05116200B9DA4D /* JoinSnsPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSnsPhoneView.swift; sourceTree = "<group>"; };
 		693F2A682A052B3300B9DA4D /* PageTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitle.swift; sourceTree = "<group>"; };
+		695B02302A07DB4A00F851A2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,8 @@
 		69067B0D29EC188300F10BE4 /* study */ = {
 			isa = PBXGroup;
 			children = (
+				695B022F2A07DB2C00F851A2 /* Utily */,
+				69231AF02A06801500BB92D8 /* Styles */,
 				693F2A562A029CB000B9DA4D /* ViewModel */,
 				693F2A552A029CA300B9DA4D /* View */,
 				693F2A542A01609200B9DA4D /* Model */,
@@ -148,6 +156,13 @@
 				69067B2B29EC188400F10BE4 /* studyUITestsLaunchTests.swift */,
 			);
 			path = studyUITests;
+			sourceTree = "<group>";
+		};
+		69231AF02A06801500BB92D8 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		693F2A542A01609200B9DA4D /* Model */ = {
@@ -193,8 +208,18 @@
 				693F2A602A02B59C00B9DA4D /* JoinTermView.swift */,
 				69231AEE2A064A6300BB92D8 /* JoinNameView.swift */,
 				693F2A662A05116200B9DA4D /* JoinSnsPhoneView.swift */,
+				69231AF12A06A6C400BB92D8 /* JoinIdView.swift */,
+				69231AF32A06A8C600BB92D8 /* JoinPassView.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		695B022F2A07DB2C00F851A2 /* Utily */ = {
+			isa = PBXGroup;
+			children = (
+				695B02302A07DB4A00F851A2 /* Router.swift */,
+			);
+			path = Utily;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,12 +356,15 @@
 				693F2A5D2A02B28C00B9DA4D /* LeftText.swift in Sources */,
 				693F2A5B2A02B19800B9DA4D /* CustomTextField.swift in Sources */,
 				693F2A672A05116200B9DA4D /* JoinSnsPhoneView.swift in Sources */,
+				69231AF22A06A6C400BB92D8 /* JoinIdView.swift in Sources */,
 				69231AED2A05516900BB92D8 /* SecurityTextField.swift in Sources */,
 				69067B1129EC188300F10BE4 /* LoginView.swift in Sources */,
 				693F2A632A02B78D00B9DA4D /* CheckBox.swift in Sources */,
 				69231AEF2A064A6300BB92D8 /* JoinNameView.swift in Sources */,
 				693F2A612A02B59C00B9DA4D /* JoinTermView.swift in Sources */,
 				69067B0F29EC188300F10BE4 /* studyApp.swift in Sources */,
+				695B02312A07DB4A00F851A2 /* Router.swift in Sources */,
+				69231AF42A06A8C600BB92D8 /* JoinPassView.swift in Sources */,
 				693F2A692A052B3300B9DA4D /* PageTitle.swift in Sources */,
 				693F2A592A02ACF700B9DA4D /* CustomButton.swift in Sources */,
 			);

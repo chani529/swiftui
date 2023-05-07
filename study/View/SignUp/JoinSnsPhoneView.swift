@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct JoinSnsPhoneView: View {
+    @EnvironmentObject var router: Router
     @State private var phone = ""
     @State private var authCode = ""
     @State private var isValidPhone:Bool = false
+    @State var isLinkActive: Bool = false
+    
     var body: some View {
         VStack{
-            PageTitle(title:"회원 가입")
+            PageTitle(title:"회원 가입",subTitle: "2 / 4")
             VStack(spacing:10) {
                 LeftText("휴대폰번호")
                 HStack(alignment: .top){
@@ -33,7 +36,7 @@ struct JoinSnsPhoneView: View {
           
             
             CustomButton(title: "다음", backgroundColor: .black, foregroundColor: .white) {
-                // 버튼이 눌렸을 때 실행될 코드
+                router.gotoView(views: Views.JoinIdView)
             }
         }.padding()
     }

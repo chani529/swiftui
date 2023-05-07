@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State var stack = NavigationPath()
+    @EnvironmentObject var router: Router
+    
     @State private var id = ""
     @State var isVaildId: Bool = true
     @State private var pass = ""
     @State var isVaildPassId: Bool = false
-    @State private var selection: Int? = nil
     
     var body: some View {
         
-        NavigationView{
+        NavigationStack(path: $router.path){
             VStack {
                 VStack(spacing: 10)  {
                     ZenLogo()
@@ -43,30 +45,34 @@ struct LoginView: View {
                     }
                 }
                 HStack {
-                    Spacer()
-                    NavigationLink(
-                        destination: JoinNameView(),
-                        tag: 1,
-                        selection: $selection,
-                        label: { Text("회원 가입").foregroundColor(.black)}
-                    )
-                    
-                    NavigationLink(destination: JoinTermView()) {
-                        Text("회원 가입").foregroundColor(.black)
-                    }
-                    
+//                    NavigationLink(value: Views.JoinTermView){
+//                            Text("회원 가입")
+//                                .foregroundColor(.black)
+//                    }
+                    Button(action: {
+                        router.gotoView(views: Views.JoinTermView)
+                    }, label: {
+                        Text("회원 가입")
+                            .foregroundColor(.black)
+                    })
+                    .buttonStyle(PlainButtonStyle())
                     Spacer()
                     Text("계정 찾기 - 비밀번호")
                 }
+                .navigationDestination(for: Views.self){ destination in
+                     ViewFactory.viewForDestination(destination)
+                 }
             }
         }
         .padding()
+        
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+            .environmentObject(Router())
     }
 }
 
