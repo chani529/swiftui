@@ -21,8 +21,6 @@
 			</array>
 			<key>SupportedPlatform</key>
 			<string>ios</string>
-			<key>NMFClientId</key>
-			<string>t080jr9lpx</string>
 		</dict>
 		<dict>
 			<key>LibraryIdentifier</key>
