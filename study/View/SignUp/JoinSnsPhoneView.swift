@@ -36,7 +36,7 @@ struct JoinSnsPhoneView: View {
           
             
             CustomButton(title: "다음", backgroundColor: .black, foregroundColor: .white) {
-                router.gotoView(views: Views.JoinIdView)
+                router.gotoJoinView(joinViews: JoinViews.JoinIdView)
             }
         }.padding()
     }

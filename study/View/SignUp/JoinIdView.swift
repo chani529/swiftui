@@ -20,7 +20,7 @@ struct JoinIdView: View {
             
             Spacer()
             CustomButton(title: "다음", backgroundColor: .black, foregroundColor: .white) {
-                router.gotoView(views: Views.JoinPassView)
+                router.gotoJoinView(joinViews: JoinViews.JoinPassView)
             }
         }.padding()
     }

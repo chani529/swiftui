@@ -27,7 +27,7 @@ struct JoinTermView: View {
             Spacer()
           
             CustomButton(title: "동의하고 가입하기", backgroundColor: .black, foregroundColor: .white) {
-                router.gotoView(views: Views.JoinNameView)
+                router.gotoJoinView(joinViews: JoinViews.JoinNameView)
             }
           
             Spacer()

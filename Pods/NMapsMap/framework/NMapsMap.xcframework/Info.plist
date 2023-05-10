@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NMFClientId</key>
+	<string>t080jr9lpx</string>
+	<key>NMFGovClientId</key>
+	<string>t080jr9lpx</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>스테이션 정보 조회를 위해 사용</string>
 	<key>AvailableLibraries</key>
 	<array>
 		<dict>
@@ -15,6 +21,8 @@
 			</array>
 			<key>SupportedPlatform</key>
 			<string>ios</string>
+			<key>NMFClientId</key>
+			<string>t080jr9lpx</string>
 		</dict>
 		<dict>
 			<key>LibraryIdentifier</key>
@@ -30,13 +38,13 @@
 			<string>ios</string>
 			<key>SupportedPlatformVariant</key>
 			<string>simulator</string>
+			<key>NMFClientId</key>
+			<string>t080jr9lpx</string>
 		</dict>
 	</array>
 	<key>CFBundlePackageType</key>
 	<string>XFWK</string>
 	<key>XCFrameworkFormatVersion</key>
 	<string>1.0</string>
-	<key>NMFClientId</key>
-	<string>t080jr9lpx</string>
 </dict>
 </plist>

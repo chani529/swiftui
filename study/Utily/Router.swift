@@ -8,13 +8,14 @@
 import Foundation
 import SwiftUI
 
-enum Views: Hashable {
+enum JoinViews: Hashable {
     
     case JoinTermView
     case JoinNameView
     case JoinSnsPhoneView
     case JoinIdView
     case JoinPassView
+    case StationMapView
     
 }
 
@@ -27,8 +28,8 @@ class Router: ObservableObject {
         path = .init()
     }
     
-    func gotoView(views: Views) {
-        path.append(views)
+    func gotoJoinView(joinViews: JoinViews) {
+        path.append(joinViews)
     }
     
 }
@@ -36,7 +37,7 @@ class Router: ObservableObject {
 enum ViewFactory {
     
     @ViewBuilder
-    static func viewForDestination(_ destination: Views) -> some View {
+    static func viewForDestination(_ destination: JoinViews) -> some View {
         switch destination {
             
             case .JoinTermView:
@@ -53,6 +54,9 @@ enum ViewFactory {
 
             case .JoinPassView:
                 JoinPassView()
+        
+            case .StationMapView:
+                StationMapView()
         }
     }
 }

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct LoginView: View {
     @State var stack = NavigationPath()
     @EnvironmentObject var router: Router
@@ -45,12 +46,9 @@ struct LoginView: View {
                     }
                 }
                 HStack {
-//                    NavigationLink(value: Views.JoinTermView){
-//                            Text("회원 가입")
-//                                .foregroundColor(.black)
-//                    }
                     Button(action: {
-                        router.gotoView(views: Views.JoinTermView)
+//                        router.gotoJoinView(joinViews: JoinViews.JoinTermView)
+                        router.gotoJoinView(joinViews: JoinViews.StationMapView)
                     }, label: {
                         Text("회원 가입")
                             .foregroundColor(.black)
@@ -59,7 +57,7 @@ struct LoginView: View {
                     Spacer()
                     Text("계정 찾기 - 비밀번호")
                 }
-                .navigationDestination(for: Views.self){ destination in
+                .navigationDestination(for: JoinViews.self){ destination in
                      ViewFactory.viewForDestination(destination)
                  }
             }
@@ -67,6 +65,7 @@ struct LoginView: View {
         .padding()
         
     }
+    
 }
 
 struct LoginView_Previews: PreviewProvider {

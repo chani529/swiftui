@@ -12,6 +12,7 @@ struct studyApp: App {
     var body: some Scene {
         WindowGroup {
             LoginView()
+                .environmentObject(Router())
         }
     }
 }
