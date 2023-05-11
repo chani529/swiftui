@@ -29,6 +29,7 @@
 		693F2A692A052B3300B9DA4D /* PageTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A682A052B3300B9DA4D /* PageTitle.swift */; };
 		695B02312A07DB4A00F851A2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B02302A07DB4A00F851A2 /* Router.swift */; };
 		696D73552A07FC8700BF6F48 /* StationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D73542A07FC8700BF6F48 /* StationMapView.swift */; };
+		69CF24DF2A0D2DD300F0D0A9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF24DE2A0D2DD300F0D0A9 /* HomeView.swift */; };
 		69E637452A09127500D24BB1 /* NMapsGeometry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E637442A09127500D24BB1 /* NMapsGeometry.xcframework */; };
 		69E637472A09128300D24BB1 /* NMapsMap.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E637462A09128300D24BB1 /* NMapsMap.xcframework */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		693F2A682A052B3300B9DA4D /* PageTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitle.swift; sourceTree = "<group>"; };
 		695B02302A07DB4A00F851A2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		696D73542A07FC8700BF6F48 /* StationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapView.swift; sourceTree = "<group>"; };
+		69CF24DE2A0D2DD300F0D0A9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		69E637442A09127500D24BB1 /* NMapsGeometry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NMapsGeometry.xcframework; path = Pods/NMapsGeometry/framework/NMapsGeometry.xcframework; sourceTree = "<group>"; };
 		69E637462A09128300D24BB1 /* NMapsMap.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NMapsMap.xcframework; path = Pods/NMapsMap/framework/NMapsMap.xcframework; sourceTree = "<group>"; };
 		A75B5A2D89423081CF0470B7 /* Pods-study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-study.release.xcconfig"; path = "Target Support Files/Pods-study/Pods-study.release.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +223,8 @@
 		693F2A552A029CA300B9DA4D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				69CF24DD2A0D2DBA00F0D0A9 /* Home */,
+				69CF24DC2A0D2DA200F0D0A9 /* Join */,
 				696D73532A07FC7000BF6F48 /* Station */,
 				69067B1029EC188300F10BE4 /* LoginView.swift */,
 				693F2A6A2A053DEC00B9DA4D /* SignUp */,
@@ -275,6 +279,21 @@
 				696D73542A07FC8700BF6F48 /* StationMapView.swift */,
 			);
 			path = Station;
+			sourceTree = "<group>";
+		};
+		69CF24DC2A0D2DA200F0D0A9 /* Join */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
+		69CF24DD2A0D2DBA00F0D0A9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				69CF24DE2A0D2DD300F0D0A9 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,6 +486,7 @@
 				69067B0F29EC188300F10BE4 /* studyApp.swift in Sources */,
 				695B02312A07DB4A00F851A2 /* Router.swift in Sources */,
 				69231AF42A06A8C600BB92D8 /* JoinPassView.swift in Sources */,
+				69CF24DF2A0D2DD300F0D0A9 /* HomeView.swift in Sources */,
 				693F2A692A052B3300B9DA4D /* PageTitle.swift in Sources */,
 				693F2A592A02ACF700B9DA4D /* CustomButton.swift in Sources */,
 			);
