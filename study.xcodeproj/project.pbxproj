@@ -29,6 +29,8 @@
 		693F2A692A052B3300B9DA4D /* PageTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F2A682A052B3300B9DA4D /* PageTitle.swift */; };
 		695B02312A07DB4A00F851A2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B02302A07DB4A00F851A2 /* Router.swift */; };
 		696D73552A07FC8700BF6F48 /* StationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D73542A07FC8700BF6F48 /* StationMapView.swift */; };
+		698E8D372A0F266F00D49165 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E8D362A0F266E00D49165 /* ContentView.swift */; };
+		698E8D392A10B68200D49165 /* StationDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698E8D382A10B68200D49165 /* StationDetailModel.swift */; };
 		69CF24DF2A0D2DD300F0D0A9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF24DE2A0D2DD300F0D0A9 /* HomeView.swift */; };
 		69E637452A09127500D24BB1 /* NMapsGeometry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E637442A09127500D24BB1 /* NMapsGeometry.xcframework */; };
 		69E637472A09128300D24BB1 /* NMapsMap.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E637462A09128300D24BB1 /* NMapsMap.xcframework */; };
@@ -91,6 +93,8 @@
 		693F2A682A052B3300B9DA4D /* PageTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitle.swift; sourceTree = "<group>"; };
 		695B02302A07DB4A00F851A2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		696D73542A07FC8700BF6F48 /* StationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapView.swift; sourceTree = "<group>"; };
+		698E8D362A0F266E00D49165 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		698E8D382A10B68200D49165 /* StationDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailModel.swift; sourceTree = "<group>"; };
 		69CF24DE2A0D2DD300F0D0A9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		69E637442A09127500D24BB1 /* NMapsGeometry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NMapsGeometry.xcframework; path = Pods/NMapsGeometry/framework/NMapsGeometry.xcframework; sourceTree = "<group>"; };
 		69E637462A09128300D24BB1 /* NMapsMap.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NMapsMap.xcframework; path = Pods/NMapsMap/framework/NMapsMap.xcframework; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 		693F2A542A01609200B9DA4D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				698E8D382A10B68200D49165 /* StationDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				69067B1029EC188300F10BE4 /* LoginView.swift */,
 				693F2A6A2A053DEC00B9DA4D /* SignUp */,
 				693F2A572A02ACD500B9DA4D /* Components */,
+				698E8D362A0F266E00D49165 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -480,9 +486,11 @@
 				696D73552A07FC8700BF6F48 /* StationMapView.swift in Sources */,
 				69231AED2A05516900BB92D8 /* SecurityTextField.swift in Sources */,
 				69067B1129EC188300F10BE4 /* LoginView.swift in Sources */,
+				698E8D372A0F266F00D49165 /* ContentView.swift in Sources */,
 				693F2A632A02B78D00B9DA4D /* CheckBox.swift in Sources */,
 				69231AEF2A064A6300BB92D8 /* JoinNameView.swift in Sources */,
 				693F2A612A02B59C00B9DA4D /* JoinTermView.swift in Sources */,
+				698E8D392A10B68200D49165 /* StationDetailModel.swift in Sources */,
 				69067B0F29EC188300F10BE4 /* studyApp.swift in Sources */,
 				695B02312A07DB4A00F851A2 /* Router.swift in Sources */,
 				69231AF42A06A8C600BB92D8 /* JoinPassView.swift in Sources */,
