@@ -60,7 +60,6 @@ struct BottomSheetView : View {
             .background(Color.white)
             .cornerRadius(16)
             .padding(.top)
-            .animation(.spring())
             .transition(.move(edge: .bottom)) // Bottom Sheet가 아래로 슬라이드되도록 함
             .onTapGesture {
                 // Bottom Sheet 클릭 시 사라지도록 함

@@ -9,8 +9,10 @@ import SwiftUI
 import NMapsMap
 
 struct StationMapView: View {
+    @StateObject private var viewModel = StationViewModel()
     @State var coord: (Double, Double) = (126.9783881, 37.5666102)
     @State private var isShowingBottomSheet = false
+//    @ObservedObject var viewModel = StationViewModel()
     
     var body: some View {
         ZStack {
@@ -72,6 +74,9 @@ struct StationMapView: View {
             
             UIMapView(coord: coord)
                 .edgesIgnoringSafeArea(.vertical)
+                .onAppear {
+                    viewModel.fetchStations()
+                }
             
         }// zstack
     }
@@ -98,6 +103,13 @@ struct UIMapView: UIViewRepresentable {
             stationDetailModel.isBottomSheetShow = true
             marker.iconImage = NMFOverlayImage(image: mergeImage)
             marker.mapView = view.mapView
+            
+//            AF.request("http://nzeus.zentropy.co.kr/api/station").responseJSON {
+//                response in
+//                print("Request: \(String(describing: response.request))")   // Original request
+//                print("Response: \(String(describing: response.response))")  // url response
+//                print("Result: \(response.result)") // response serialization
+//            }
             
             let pathOverlay = NMFPath()
             let coordinates: [[Double]] = [

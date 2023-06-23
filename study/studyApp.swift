@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Alamofire
 
 @main
 struct studyApp: App {
@@ -14,5 +15,15 @@ struct studyApp: App {
             LoginView()
                 .environmentObject(Router())
         }
+    }
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+        let authManager = APIManager.shared
+//        let interceptor = APIInterceptor(apiManager: APIManager)
+        // Alamofire 세션 생성
+//        let session = Session(interceptor: interceptor)
+        return true
     }
 }
